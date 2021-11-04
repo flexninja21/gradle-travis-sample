@@ -2,7 +2,7 @@ package io.turntabl;
 
 import java.util.List;
 
-public class Client {
+public abstract class Client {
     private String name;
     private int ID;
     private ServiceLevel serviceLevel;
@@ -36,6 +36,8 @@ public class Client {
     public void setServiceLevel(ServiceLevel serviceLevel) {
         this.serviceLevel = serviceLevel;
     }
+
+    public abstract String getContactName();
 
     @Override
     public String toString() {
